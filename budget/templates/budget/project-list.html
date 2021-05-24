@@ -1,0 +1,18 @@
+{% extends 'budget/base.html' %}
+{% load static %}
+
+{% block list_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'budget/project-list.css' %}">
+{% endblock list_css %}
+
+{% block content %}
+    <div class="proj-list-container">
+        <h1>PROJECTS LIST</h1>
+        <div class="no-proj-wrapper">
+            <h3 class="no-proj-msg">Sorry, you do not have any active projects</h3>
+            <div class="btn-container">
+                <button class="new-proj-btn">Add Project</button>
+            </div>
+        </div>
+    </div>
+{% endblock content%}

@@ -1,0 +1,34 @@
+{% extends 'budget/base.html' %}
+{% load static %}
+
+{% block detail_css %}
+<link rel="stylesheet" type="text/css" href="{% static 'budget/project-detail.css' %}">
+{% endblock detail_css %}
+
+{% block content %}
+    <div class="detail-container">
+        <h1>PROJECTS Detail</h1>
+        <div class="detail-row">
+
+            <div class="card">
+                <h3 class="card-title">Total Budget</h3>
+                <h1 class="card-value">$3000</h1>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Total Budget</h3>
+                <h1 class="card-value">$3000</h1>
+            </div>
+
+            <div class="card">
+                <h3 class="card-title">Total Budget</h3>
+                <h1 class="card-value">$3000</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="expense-container">
+
+    </div>
+{% endblock content%}
